@@ -9,7 +9,7 @@ module.exports = function(app) {
     app.route('/users')
         .get(todoList.users);
 
-    app.route('/users/:user_id')
+    app.route('/users/:userId')
         .get(todoList.findUsers);
 
     app.route('/users')
